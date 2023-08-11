@@ -1,0 +1,95 @@
+                                            ### Frontend Deployment ###                                                          
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ktn-frontend-deployment
+  labels:
+    app: ktn-frontend
+  namespace: ktn
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ktn-frontend
+  template:
+    metadata:
+      labels:
+        app: ktn-frontend
+    spec:
+      restartPolicy: Always
+      containers:
+        - name: ktn-frontend-container
+          image: 844268948863.dkr.ecr.us-east-1.amazonaws.com/ktn-frontend:145
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+          env:
+            - name: JWT_SECRET
+              value: "apiruyh3746hd3466yed"
+            - name: NEXTAUTH_URL
+              value: "http://ad4e6ddba20384445b10b7627b40f5fb-36416475.us-west-1.elb.amazonaws.com"
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 3000
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            timeoutSeconds: 5
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 3000
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            timeoutSeconds: 5
+---
+                                                            ### Frontend Service ###
+apiVersion: v1
+kind: Service
+metadata:
+  name: ktn-frontend
+  labels:
+    app: ktn-frontend
+  namespace: ktn
+spec:
+  type: LoadBalancer # Change this to NodePort or ClusterIP as per your requirement
+  selector:
+    app: ktn-frontend
+  ports:
+    - name: http
+      port: 80
+      targetPort: 3000
+    - name: https
+      port: 443
+      targetPort: 8081
+
+
+---
+                                                            ### Frontend HPA ###
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: frontend-hpa
+  namespace: ktn
+spec:
+  behavior:
+    scaleDown:
+      stabilizationWindowSeconds: 10
+      policies:
+      - type: Percent
+        value: 30
+        periodSeconds: 60
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: ktn-frontend
+  minReplicas: 1
+  maxReplicas: 2
+  metrics:
+    - type: Resource
+      resource:
+        name: memory
+        target:
+          type: Utilization
+          averageUtilization: 85

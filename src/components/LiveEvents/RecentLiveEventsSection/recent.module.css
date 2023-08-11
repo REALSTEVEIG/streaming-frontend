@@ -1,0 +1,29 @@
+.span_text {
+  font-size: 12px;
+  font-weight: 600;
+}
+.p_text {
+  font-size: 14px;
+}
+.title {
+  position: relative;
+}
+.title::after {
+  position: absolute;
+  content: "";
+  height: 30px;
+  margin: 0 auto;
+  left: -15px;
+  width: 2px;
+  bottom: -5px;
+  background: #a37500;
+}
+.view_all {
+  text-decoration: none;
+  color: #976d00;
+  font-weight: 700;
+}
+.page_link {
+  color: #976d00;
+  text-decoration: none;
+}

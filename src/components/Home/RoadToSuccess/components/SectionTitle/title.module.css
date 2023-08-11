@@ -1,0 +1,27 @@
+.title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  position: relative;
+  text-transform: uppercase;
+  background: linear-gradient(92.22deg, #000210 6.91%, #c68f00 84.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+}
+
+.title::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -4px;
+  margin: 0 auto;
+  left: 25%;
+  width: 50%;
+  background: #a37500;
+  align-self: center;
+}

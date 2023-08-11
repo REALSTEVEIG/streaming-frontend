@@ -1,0 +1,17 @@
+.image {
+  max-width: 285px;
+  margin-bottom: 10px;
+}
+.more_icon {
+  color: #ffffff;
+}
+.small_text {
+  font-size: 12px;
+}
+.title {
+  font-size: 12px;
+}
+.button {
+  font-size: 12px;
+  float: inline-end;
+}

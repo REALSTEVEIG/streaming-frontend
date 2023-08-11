@@ -1,0 +1,90 @@
+.section {
+  height: 70vh;
+}
+.overlay {
+  background: rgba(5, 0, 0, 0.75);
+  height: 70vh;
+}
+.span_text {
+  font-size: 12px;
+  font-weight: 600;
+}
+.p_text {
+  font-size: 14px;
+  font-weight: 500;
+}
+.play_button {
+  color: #8d6600;
+  margin-right: 5px;
+}
+.top_player {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(131, 131, 131, 0.19);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  min-height: 150px;
+  background-image: url("/assets/images/player-image.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container {
+  position: relative;
+}
+.bottom_title {
+  font-size: 10px;
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  background: #1c0000;
+}
+.video_icon {
+  background: rgba(196, 196, 196, 0.12);
+  border: 1px solid rgba(209, 209, 209, 0.06);
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 35px !important;
+  color: #715100;
+}
+.title {
+  margin-top: -21px;
+  position: relative;
+}
+.title::after {
+  position: absolute;
+  width: 10px;
+  height: 500px;
+  background: #715100;
+}
+@media screen and (max-width: 820px) {
+  .section {
+    height: 40vh;
+    height: 40vh;
+  }
+  .overlay {
+    height: 40vh;
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    height: 40vh;
+  }
+  .overlay {
+    height: 40vh;
+  }
+  .mobileText {
+    color: black;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .section {
+    min-height: 45vh;
+    background-size: cover;
+  }
+  .overlay {
+    min-height: 45vh;
+  }
+}

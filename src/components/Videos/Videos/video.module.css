@@ -1,0 +1,40 @@
+.play_link {
+  text-decoration: none;
+}
+.play {
+  position: absolute;
+  color: #976d00;
+  background: rgba(213, 213, 213, 0.3);
+  font-size: 55px;
+  border-radius: 50%;
+  padding: 15px;
+  top: 40%;
+  left: 50%;
+}
+.video {
+  /* width: 349.77px; */
+  height: 200px;
+}
+.video.video[poster] {
+  /* width: 349.77px; */
+  object-fit: fill;
+}
+.card {
+  position: relative;
+}
+.card_body {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  background: url("/assets/videos/videos-image-overlay.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+}
+@media screen and (max-width: 480px) {
+  .play {
+    left: 45%;
+  }
+}

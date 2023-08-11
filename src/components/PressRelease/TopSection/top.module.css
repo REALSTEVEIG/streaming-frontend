@@ -1,0 +1,149 @@
+.section {
+  height: 60vh;
+  width: 100vw;
+}
+.overlay {
+  background: linear-gradient(95.22deg, rgba(5, 0, 0, 0.65) 4.71%, rgba(50, 36, 0, 0.64) 45.65%, rgba(17, 0, 0, 0.88) 85.75%);
+  height: 60vh;
+  width: 100vw;
+}
+.span_text {
+  font-size: 12px;
+  font-weight: 600;
+}
+.p_text {
+  font-size: 12px;
+}
+.bottom_title {
+  font-size: 10px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 40vh;
+  width: 100vw !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+.mid_nav {
+  border: 1px solid rgba(122, 122, 122, 0.05);
+}
+.active {
+  border-bottom: 3px solid #976d00 !important;
+}
+
+.active .nav-link {
+  font-weight: 800 !important;
+}
+.back_button {
+  background: rgba(221, 221, 221, 0.2) !important;
+  border-radius: 0px;
+  position: absolute;
+  right: 0px;
+  bottom: 40vh;
+}
+.hr {
+  position: relative;
+  height: 1px;
+}
+.hr::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -1px;
+  margin: 0 auto;
+  left: -1px;
+  width: 40%;
+  background: #a37500;
+}
+
+@media screen and (max-width: 820px) {
+  .section {
+    height: 30vh;
+  }
+  .overlay {
+    height: 30vh;
+  }
+  .mobileText {
+    color: black;
+  }
+  .bottom_title {
+    position: unset !important;
+    width: 100vw !important;
+    margin-bottom: -105px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .section {
+    height: 40vh;
+  }
+  .overlay {
+    height: 40vh;
+  }
+  .mobileText {
+    color: black;
+  }
+  .bottom_title {
+    position: unset !important;
+    width: 100vw !important;
+    margin-bottom: -75px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    height: 40vh;
+  }
+  .overlay {
+    height: 40vh;
+  }
+  .mobileText {
+    color: black;
+  }
+  .bottom_title {
+    margin-bottom: -55px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .section {
+    height: 54vh;
+  }
+  .overlay {
+    height: 54vh;
+  }
+  .bottom_title {
+    margin-bottom: -185px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .section {
+    height: 54vh;
+    background-size: cover;
+  }
+  .overlay {
+    height: 54vh;
+  }
+  .bottom_title {
+    margin-bottom: -155px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .section {
+    height: 56vh;
+  }
+  .overlay {
+    height: 56vh;
+  }
+  .bottom_title {
+    margin-bottom: -125px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .section {
+    height: 56vh;
+  }
+  .overlay {
+    min-height: 56vh;
+  }
+}

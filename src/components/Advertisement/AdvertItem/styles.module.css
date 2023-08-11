@@ -1,0 +1,21 @@
+.description {
+  font-size: 12px;
+}
+
+.more_icon {
+  color: #ffffff;
+}
+.small_text {
+  font-size: 12px;
+}
+.title {
+  font-size: 12px;
+}
+.button {
+  font-size: 12px;
+  float: inline-end;
+}
+.leftButton {
+  font-size: 12px;
+  float: inline-start;
+}

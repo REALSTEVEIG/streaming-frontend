@@ -1,0 +1,25 @@
+.time {
+  position: relative;
+}
+
+.time::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -15px;
+  margin: 0 auto;
+  left: 0;
+  width: 100%;
+  background: #a37500;
+}
+
+@media screen and (max-width: 880px) {
+  .counter {
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .counter {
+    display: none;
+  }
+}

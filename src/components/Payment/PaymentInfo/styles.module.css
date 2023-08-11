@@ -1,0 +1,18 @@
+.disc {
+  border-radius: 50px;
+  padding-top: 5px;
+  margin-right: 5px;
+  color: white;
+  background: #999999;
+  padding-right: 6px;
+  padding-left: 6px;
+  padding-bottom: 5px;
+  font-size: 12px;
+}
+
+.activeDisc {
+  background: #b78400 !important;
+}
+.rightCard{
+    border-left: 1px solid black;
+}

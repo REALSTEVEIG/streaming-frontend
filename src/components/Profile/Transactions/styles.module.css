@@ -1,0 +1,22 @@
+.outerDisc {
+  width: 55px;
+  height: 55px;
+  background: #000b26;
+  border: 6px solid #e1e1e1;
+  border-radius: 20px;
+  font-size: 10px;
+  padding: 5px;
+}
+.small {
+  font-size: 12px;
+}
+.btn_small {
+  font-size: 12px;
+  border-radius: 0px !important;
+  border-width: 1px solid black;
+}
+.form_control:active {
+  color: #495057 !important;
+  background-color: none !important;
+  border-color: none !important;
+}

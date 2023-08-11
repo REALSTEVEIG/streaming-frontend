@@ -1,0 +1,39 @@
+.footer {
+  background: #00041e;
+  bottom: 0;
+}
+.social_icon {
+  background: rgba(145, 145, 145, 0.23);
+  border: 1px solid #3c3c3c;
+  /* padding: 5px 10px 8px 10px; */
+  padding: 7px 7px 7px 7px;
+}
+.social_icon:hover {
+  background-color: #a37500;
+}
+.link_title {
+  color: #a37500;
+  position: relative;
+}
+.link_title::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -4px;
+  margin: 0 auto;
+  left: 0;
+  width: 20%;
+  background: #a37500;
+}
+.footer_text_size {
+  font-size: 10px !important;
+}
+.icon {
+  font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  .footer_text {
+    font-size: 9px;
+    margin-left: -15px;
+  }
+}

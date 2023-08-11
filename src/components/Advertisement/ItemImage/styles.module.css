@@ -1,0 +1,16 @@
+.imageContainer {
+  position: relative;
+}
+.firstImage {
+  width: 313px;
+  height: 200px;
+  border-radius: 10px;
+}
+.secondImage {
+  position: absolute;
+  width: 313px;
+  height: 200px;
+  left: -10px;
+  bottom: -10px;
+  border-radius: 10px;
+}

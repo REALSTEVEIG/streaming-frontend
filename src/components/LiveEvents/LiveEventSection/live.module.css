@@ -1,0 +1,51 @@
+.section {
+  height: 45vh;
+}
+.span_text {
+  font-size: 12px;
+  font-weight: 600;
+}
+.p_text {
+  font-size: 14px;
+}
+.divider {
+  border-width: 0.2px;
+  border-color: black;
+}
+.video {
+  width: 100%;
+  height: 87%;
+}
+.video.video[poster] {
+  object-fit: fill;
+}
+.video.video[controls] {
+  border-radius: 25px;
+}
+.title {
+  position: relative;
+}
+.title::after {
+  position: absolute;
+  content: "";
+  height: 30px;
+  margin: 0 auto;
+  left: -15px;
+  width: 2px;
+  bottom: -5px;
+  background: #a37500;
+}
+
+@media screen and (max-width: 880px) {
+  .section {
+    flex-direction: unset;
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    flex-direction: column-reverse !important;
+    height: 30vh;
+  }
+}

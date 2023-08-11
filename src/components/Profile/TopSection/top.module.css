@@ -1,0 +1,50 @@
+.section {
+  min-height: 45vh;
+  border-bottom-left-radius: 10vh;
+  border-bottom-right-radius: 10vh;
+}
+.overlay {
+  background: linear-gradient(95.22deg, rgba(5, 0, 0, 0.65) 4.71%, rgba(50, 36, 0, 0.64) 45.65%, rgba(17, 0, 0, 0.88) 85.75%);
+  height: 45vh;
+  border-bottom-left-radius: 10vh;
+  border-bottom-right-radius: 10vh;
+}
+.span_text {
+  font-size: 12px;
+  font-weight: 600;
+}
+.p_text {
+  font-size: 12px;
+}
+
+.image_container {
+  width: 56px;
+  height: 56px;
+  border: 2px solid#C1C1C1;
+  border-radius: 30px;
+  position: absolute;
+  top: 40vh;
+  left: 10vw;
+  text-align: center;
+  padding: 0px;
+}
+.image {
+  height: 100%;
+  border-radius: 30px;
+}
+.profile {
+  position: absolute;
+  top: 40vh;
+  left: 15vw;
+  max-width: 70vw;
+}
+.edit_pen {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #805c00;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  left: 40px;
+  bottom: -1px;
+}

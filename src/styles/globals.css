@@ -1,0 +1,121 @@
+body {
+  font-family: Helvetica;
+  top: 0px !important;
+}
+
+.skiptranslate iframe{
+  display: none !important;
+  height: 0px !important;
+  background-colr: black;
+  margin: 0;
+}
+
+.main-container-fluid {
+  overflow-x: hidden !important;
+}
+/* Bootstrap 5 primary button */
+.btn {
+  border: 0px !important;
+}
+.btn-primary {
+  color: #e6e6e6 !important;
+  background-color: #976d00 !important;
+}
+
+.btn-primary:focus,
+.btn-primary:hover {
+  color: #e6e6e6 !important;
+  font-weight: 600;
+  /* background-color: rgb(151, 109, 0, 0.3)!important; */
+}
+
+a.navbar-brand {
+  color: #976d00 !important;
+}
+
+.navbar-brand:hover {
+  color: #e6e6e6 !important;
+}
+.nav-opacity {
+  background-color: rgba(34, 32, 32, 0.5) !important;
+}
+
+.nav-item .nav-link {
+  font-size: 12px;
+  font-weight: 600 !important;
+}
+
+.ktn-text-primary {
+  color: #976d00 !important;
+}
+
+.input-text {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 12px !important;
+}
+
+.buttons {
+  margin: 15px auto;
+  width: 700px;
+  text-align: center;
+}
+
+.form-control:focus {
+  color: #495057 !important;
+  background-color: #fff !important;
+  border-color: #ced4da !important;
+}
+
+select:active,
+select:focus,
+select:hover,
+select:visited,
+input:active,
+input:focus,
+input:hover,
+input:visited,
+input.active,
+input.focus,
+input.hover,
+input.visited.visited {
+  box-shadow: unset !important;
+  outline: 0 !important;
+}
+
+.emptyCart {
+  min-height: 30vh;
+}
+
+.coming_soon {
+  background: url("/assets/images/comming-soon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  padding: 0px !important;
+}
+.coming_soon_overlay {
+  background: linear-gradient(95.22deg, rgba(5, 0, 0, 0.65) 4.71%, rgba(50, 36, 0, 0.64) 45.65%, rgba(17, 0, 0, 0.88) 85.75%);
+  height: 100vh;
+  width: 100vw;
+}
+.coming_soon_title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.sub_title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 53px;
+  color: #ffffff;
+}
+
+.VIpgJd-ZVi9od-ORHb {
+  display: none !important;
+}

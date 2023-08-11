@@ -1,0 +1,39 @@
+.image {
+  width: 150px;
+  min-height: 150px !important;
+}
+
+.overlay {
+  background: linear-gradient(279.51deg, rgba(144, 104, 0, 0.0735) 36.91%, rgba(29, 75, 88, 0.49) 104.82%);
+  border-radius: 0px;
+  border: 1px solid rgb(102, 102, 102, 0.01);
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
+.speaker_name {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #976d00;
+}
+.title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000210;
+}
+.description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #656565;
+}
+@media only screen and (max-width: 600px) {
+  .overlay {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}

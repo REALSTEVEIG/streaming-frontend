@@ -1,0 +1,43 @@
+.card {
+  background: url("/assets/videos/recent/recent-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  border-radius: 5px;
+}
+.card_overlay {
+  background: rgba(17, 17, 17, 0.53);
+  background-image: url("/assets/videos/recent/recent-overlay.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  border-radius: 5px;
+}
+.details {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 0px 20px 20px 0px;
+  font-size: 12px;
+  color: white;
+}
+.time {
+  position: relative;
+}
+
+.live {
+  position: relative;
+}
+
+.live::before {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 5px;
+  border-radius: 50px;
+  margin: 0 auto;
+  left: 5px;
+  bottom: 10px;
+  background: #a37500;
+}

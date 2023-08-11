@@ -1,0 +1,89 @@
+.login {
+  background: url("/assets/images/account/account-image.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 85vh;
+  background-repeat: no-repeat;
+}
+.right_login {
+  background: rgb(229, 229, 229, 0.3);
+  min-height: 85vh;
+}
+.login_btn {
+  background: black !important;
+  padding-bottom: 10px;
+}
+.left_container {
+  background: url("/assets/images/account/account-overlay.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.logo {
+  width: 34px;
+  height: 41px;
+  /* position: absolute; */
+  top: 70px;
+  left: 180px;
+}
+
+.signup {
+  /* position: absolute; */
+  text-align: end;
+  bottom: 54px;
+  left: 250px;
+}
+
+.input {
+  border-color: rgb(229, 229, 229, 0.4) !important;
+}
+
+.social_buttons {
+  background: #ffffff !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 3px;
+  font-size: 12px !important;
+}
+
+.label {
+  color: black;
+  font-weight: 500;
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 880px) {
+  .login_btn {
+    width: 80% !important;
+  }
+  .login_container {
+    height: 100vh;
+  }
+  .right_login {
+    height: 100vh;
+    justify-content: flex-start !important;
+  }
+  .back_button {
+    position: absolute;
+    top: -25px;
+    left: -15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .login_btn {
+    width: 80% !important;
+  }
+  .login_container {
+    height: 100vh;
+  }
+  .right_login {
+    height: 100vh;
+    justify-content: flex-start !important;
+  }
+  .back_button {
+    position: absolute;
+    top: -25px;
+    left: -15px;
+  }
+}

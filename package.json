@@ -1,0 +1,30 @@
+{
+  "name": "ktn-ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next-auth/upstash-redis-adapter": "^3.0.4",
+    "@next/font": "13.1.6",
+    "@stripe/react-stripe-js": "^2.0.0",
+    "@stripe/stripe-js": "^1.49.0",
+    "axios": "^1.2.6",
+    "bootstrap": "^5.2.3",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
+    "next": "^13.1.6",
+    "next-auth": "^4.19.2",
+    "nextjs-progressbar": "^0.0.16",
+    "nodemailer": "^6.9.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.1",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.1",
+    "react-icons": "^4.8.0"
+  }
+}

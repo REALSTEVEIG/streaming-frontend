@@ -1,0 +1,14 @@
+.hr {
+  position: relative;
+  height: 1px;
+  background: #a7a7a7;
+}
+.hr::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -1px;
+  left: 34vw;
+  width: 20%;
+  background-color: #976d00 !important;
+}

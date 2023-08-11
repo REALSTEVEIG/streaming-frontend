@@ -1,0 +1,47 @@
+.section {
+  height: 55vh;
+}
+.overlay {
+  background: linear-gradient(95.22deg, rgba(5, 0, 0, 0.65) 4.71%, rgba(50, 36, 0, 0.64) 45.65%, rgba(17, 0, 0, 0.88) 85.75%);
+  height: 55vh;
+}
+.p_text {
+  font-size: 12px;
+}
+.hr {
+  position: relative;
+  height: 1px;
+}
+.hr::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -1px;
+  margin: 0 auto;
+  left: -1px;
+  width: 40%;
+  background: #a37500;
+}
+
+@media screen and (max-width: 820px) {
+  .section {
+    height: 40vh;
+    height: 40vh;
+  }
+  .overlay {
+    height: 40vh;
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    height: 40vh;
+  }
+  .overlay {
+    height: 40vh;
+  }
+  .mobileText {
+    color: black;
+  }
+}

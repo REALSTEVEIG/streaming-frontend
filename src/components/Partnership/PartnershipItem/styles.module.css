@@ -1,0 +1,60 @@
+.small {
+  font-size: 12px;
+}
+.container {
+  margin-top: -150px;
+}
+.card {
+  background: #f3f3f3;
+  border-radius: 0px;
+}
+.amount {
+  position: relative;
+  margin-bottom: 35px !important;
+}
+.amount::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  bottom: -20px;
+  margin: 0 auto;
+  left: 25%;
+  width: 50%;
+  background: #a37500;
+}
+
+.more_icon {
+  color: #ffffff;
+}
+.small_text {
+  font-size: 12px;
+}
+.title {
+  font-size: 12px;
+}
+.button {
+  font-size: 12px;
+  border-radius: 3px;
+  margin-top: 30px;
+}
+.description {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 880px) {
+  .container {
+    margin-top: 10px;
+  }
+  .title {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin-top: 10px;
+  }
+  .title {
+    font-size: 10px;
+  }
+}

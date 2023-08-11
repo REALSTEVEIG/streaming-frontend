@@ -1,0 +1,18 @@
+.section {
+  background: url("/assets/images/advertisement.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 60vh;
+}
+.overlay {
+  background: linear-gradient(
+    95.22deg,
+    rgba(5, 0, 0, 0.65) 4.71%,
+    rgba(50, 36, 0, 0.64) 45.65%,
+    rgba(17, 0, 0, 0.88) 85.75%
+  );
+  height: 60vh;
+}
+.p_text {
+  font-size: 12px;
+}
